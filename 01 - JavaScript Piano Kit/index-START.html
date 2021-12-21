@@ -1,114 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>JS Drum Kit</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-
-  <div class="keys">
-    
-    <div class="black-keys">
-      <div class="firsts">
-        <div data-key="87" class="key key-black black">
-          <kbd>W</kbd>
-          <span class="sound">C#</span>
+  <head>
+    <meta charset="UTF-8" />
+    <title>JS Drum Kit</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="keys">
+      <div class="black-keys">
+        <div class="firsts">
+          <div data-key="87" class="key key-black black">
+            <kbd>W</kbd>
+            <span class="sound">C#</span>
+          </div>
+          <div data-key="69" class="key key-black black">
+            <kbd>E</kbd>
+            <span class="sound">D#</span>
+          </div>
         </div>
-        <div data-key="69" class="key key-black black">
-          <kbd>E</kbd>
-          <span class="sound">D#</span>
+        <div class="seconds">
+          <div data-key="84" class="key key-black black">
+            <kbd>T</kbd>
+            <span class="sound">F#</span>
+          </div>
+          <div data-key="90" class="key key-black black">
+            <kbd>Z</kbd>
+            <span class="sound">G#</span>
+          </div>
+          <div data-key="85" class="key key-black black">
+            <kbd>U</kbd>
+            <span class="sound">A#</span>
+          </div>
         </div>
       </div>
-      <div class="seconds">
-        <div data-key="84" class="key key-black black">
-          <kbd>T</kbd>
-          <span class="sound">F#</span>
+
+      <div class="white-keys">
+        <div data-key="65" class="key key-white">
+          <kbd>A</kbd>
+          <span class="sound">C</span>
         </div>
-        <div data-key="90" class="key key-black black">
-          <kbd>Z</kbd>
-          <span class="sound">G#</span>
+        <div data-key="83" class="key key-white">
+          <kbd>S</kbd>
+          <span class="sound">D</span>
         </div>
-        <div data-key="85" class="key key-black black">
-          <kbd>U</kbd>
-          <span class="sound">A#</span>
+        <div data-key="68" class="key key-white">
+          <kbd>D</kbd>
+          <span class="sound">E</span>
+        </div>
+        <div data-key="70" class="key key-white">
+          <kbd>F</kbd>
+          <span class="sound">F</span>
+        </div>
+        <div data-key="71" class="key key-white">
+          <kbd>G</kbd>
+          <span class="sound">G</span>
+        </div>
+        <div data-key="72" class="key key-white">
+          <kbd>H</kbd>
+          <span class="sound">A</span>
+        </div>
+        <div data-key="74" class="key key-white">
+          <kbd>J</kbd>
+          <span class="sound">B</span>
+        </div>
+        <div data-key="75" class="key key-white">
+          <kbd>K</kbd>
+          <span class="sound">C</span>
         </div>
       </div>
     </div>
 
-    <div class="white-keys">
-      <div data-key="65" class="key key-white">
-        <kbd>A</kbd>
-        <span class="sound">C</span>
-      </div>
-      <div data-key="83" class="key key-white">
-        <kbd>S</kbd>
-        <span class="sound">D</span>
-      </div>
-      <div data-key="68" class="key key-white">
-        <kbd>D</kbd>
-        <span class="sound">E</span>
-      </div>
-      <div data-key="70" class="key key-white">
-        <kbd>F</kbd>
-        <span class="sound">F</span>
-      </div>
-      <div data-key="71" class="key key-white">
-        <kbd>G</kbd>
-        <span class="sound">G</span>
-      </div>
-      <div data-key="72" class="key key-white">
-        <kbd>H</kbd>
-        <span class="sound">A</span>
-      </div>
-      <div data-key="74" class="key key-white">
-        <kbd>J</kbd>
-        <span class="sound">B</span>
-      </div>
-      <div data-key="75" class="key key-white">
-        <kbd>K</kbd>
-        <span class="sound">C</span>
-      </div>
-    </div>
-  </div>
+    <audio data-key="65" src="sounds/C2.wav"></audio>
+    <!--A/C2-->
+    <audio data-key="87" src="sounds/Csharp2.wav"></audio>
+    <!--W/C#2-->
+    <audio data-key="83" src="sounds/D2.wav"></audio>
+    <!--S/D2-->
+    <audio data-key="69" src="sounds/Dsharp2.wav"></audio>
+    <!--E/D#2-->
+    <audio data-key="68" src="sounds/E2.wav"></audio>
+    <!--D/E2-->
+    <audio data-key="70" src="sounds/F2.wav"></audio>
+    <!--F/F2-->
+    <audio data-key="84" src="sounds/Fsharp2.wav"></audio>
+    <!--T/F#2-->
+    <audio data-key="71" src="sounds/G2.wav"></audio>
+    <!--G/G2-->
+    <audio data-key="90" src="sounds/Gsharp2.wav"></audio>
+    <!--Z/G#2-->
+    <audio data-key="72" src="sounds/A2.wav"></audio>
+    <!--H/A2-->
+    <audio data-key="85" src="sounds/Asharp2.wav"></audio>
+    <!--U/A#2-->
+    <audio data-key="74" src="sounds/B2.wav"></audio>
+    <!--J/B2-->
+    <audio data-key="75" src="sounds/C3.wav"></audio>
+    <!--K/C3-->
 
-  <audio data-key="65" src="sounds/C2.wav"></audio> <!--A/C2-->
-  <audio data-key="87" src="sounds/Csharp2.wav"></audio> <!--W/C#2-->
-  <audio data-key="83" src="sounds/D2.wav"></audio> <!--S/D2-->
-  <audio data-key="69" src="sounds/Dsharp2.wav"></audio> <!--E/D#2-->
-  <audio data-key="68" src="sounds/E2.wav"></audio> <!--D/E2-->
-  <audio data-key="70" src="sounds/F2.wav"></audio> <!--F/F2-->
-  <audio data-key="84" src="sounds/Fsharp2.wav"></audio> <!--T/F#2-->
-  <audio data-key="71" src="sounds/G2.wav"></audio> <!--G/G2-->
-  <audio data-key="90" src="sounds/Gsharp2.wav"></audio> <!--Z/G#2-->
-  <audio data-key="72" src="sounds/A2.wav"></audio> <!--H/A2-->
-  <audio data-key="85" src="sounds/Asharp2.wav"></audio> <!--U/A#2-->
-  <audio data-key="74" src="sounds/B2.wav"></audio> <!--J/B2-->
-  <audio data-key="75" src="sounds/C3.wav"></audio> <!--K/C3-->
+    <script>
+      function playSound(e) {
+        const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+        const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
+        if (!audio) return; //stop the function from running all together
+        audio.currentTime = 0; // Rewinds the audio clip to the beggining so we dont have to wait to run it again
+        audio.play();
+        key.classList.add("playing");
+        console.log(key);
+      }
 
-<script>
-  function playSound(e) {
-    const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
-    const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
-    if(!audio) return; //stop the function from running all together
-    audio.currentTime = 0; // Rewinds the audio clip to the beggining so we dont have to wait to run it again
-    audio.play();
-    key.classList.add('playing');
-    console.log(key);
-  };
+      function removeTransition(e) {
+        if (e.propertyName !== "transform") return; //skip it if its not a transform
+        this.classList.remove("playing");
+      }
 
-  
-  function removeTransition (e) {
-    if (e.propertyName !== 'transform') return; //skip it if its not a transform
-    this.classList.remove('playing');
-  };
-  
-  const keys = document.querySelectorAll(".key");
-  keys.forEach(key => key.addEventListener('transitionend', removeTransition));
-  window.addEventListener("keydown", playSound); 
-</script>
-
-
-</body>
+      const keys = document.querySelectorAll(".key");
+      keys.forEach((key) =>
+        key.addEventListener("transitionend", removeTransition)
+      );
+      window.addEventListener("keydown", playSound);
+    </script>
+  </body>
 </html>
